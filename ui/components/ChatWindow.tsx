@@ -60,7 +60,7 @@ const useSocket = (
 
             if (chatModelProvider === 'custom_openai') {
               toast.error(
-                'Seems like you are using the custom OpenAI provider, please open the settings and configure the API key and base URL',
+                'Es scheint, dass sie OpenAI als provider nutzen, bitte öffnen sie die Einstellungen und konfigurieren sie den API-Key und die Base-URL.',
               );
               setError(true);
               return;
@@ -70,7 +70,7 @@ const useSocket = (
                 !chatModelProviders ||
                 Object.keys(chatModelProviders).length === 0
               )
-                return toast.error('No chat models available');
+                return toast.error('Keine KI-Modelle verfügbar.');
             }
           }
 
@@ -166,7 +166,7 @@ const useSocket = (
         const timeoutId = setTimeout(() => {
           if (ws.readyState !== 1) {
             toast.error(
-              'Failed to connect to the server. Please try again later.',
+              'Verbindung zum Server nicht möglich. Bitte versuchee es später erneut.',
             );
           }
         }, 10000);
@@ -490,7 +490,7 @@ const ChatWindow = ({ id }: { id?: string }) => {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen">
         <p className="dark:text-white/70 text-black/70 text-sm">
-          Failed to connect to the server. Please try again later.
+          Verbindung zum Server nicht möglich. Bitte versuche es später erneut.
         </p>
       </div>
     );
