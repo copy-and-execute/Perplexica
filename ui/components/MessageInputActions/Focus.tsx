@@ -19,32 +19,32 @@ import { Fragment } from 'react';
 const focusModes = [
   {
     key: 'webSearch',
-    title: 'All',
-    description: 'Searches across all of the internet',
+    title: 'Web-Suche',
+    description: 'Durchsucht das ganze Internet',
     icon: <Globe size={20} />,
   },
   {
     key: 'academicSearch',
-    title: 'Academic',
-    description: 'Search in published academic papers',
+    title: 'Wissenschaftlich',
+    description: 'Durchsucht das Internet nach akademischen Arbeiten',
     icon: <SwatchBook size={20} />,
   },
   {
     key: 'writingAssistant',
-    title: 'Writing',
-    description: 'Chat without searching the web',
+    title: 'Allgemein',
+    description: 'Chatte ohne Internet-Suche',
     icon: <Pencil size={16} />,
   },
   {
     key: 'wolframAlphaSearch',
     title: 'Wolfram Alpha',
-    description: 'Computational knowledge engine',
+    description: 'Wissenschaftliches KI-Modell',
     icon: <BadgePercent size={20} />,
   },
   {
     key: 'youtubeSearch',
     title: 'Youtube',
-    description: 'Search and watch videos',
+    description: 'Durchsucht Youtube nach Videos',
     icon: (
       <SiYoutube
         className="h-5 w-auto mr-0.5"
@@ -56,7 +56,7 @@ const focusModes = [
   {
     key: 'redditSearch',
     title: 'Reddit',
-    description: 'Search for discussions and opinions',
+    description: 'Durchsucht Reddit nach Diskussionen und Meinungen',
     icon: (
       <SiReddit
         className="h-5 w-auto mr-0.5"
