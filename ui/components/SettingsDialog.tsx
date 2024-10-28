@@ -233,7 +233,7 @@ const SettingsDialog = ({
                     {config.chatModelProviders && (
                       <div className="flex flex-col space-y-1">
                         <p className="text-black/70 dark:text-white/70 text-sm">
-                          Chat model Provider
+                          KI-Modell provider
                         </p>
                         <Select
                           value={selectedChatModelProvider ?? undefined}
@@ -285,7 +285,7 @@ const SettingsDialog = ({
                                   : [
                                       {
                                         value: '',
-                                        label: 'No models available',
+                                        label: 'Keine Modelle verfügbar.',
                                         disabled: true,
                                       },
                                     ]
@@ -293,7 +293,7 @@ const SettingsDialog = ({
                                     {
                                       value: '',
                                       label:
-                                        'Invalid provider, please check backend logs',
+                                        'Ungültiger provider, bitte überprüfe die Backend-Logs.',
                                       disabled: true,
                                     },
                                   ];
@@ -310,7 +310,7 @@ const SettingsDialog = ({
                             </p>
                             <Input
                               type="text"
-                              placeholder="Model name"
+                              placeholder="Modell-Name"
                               defaultValue={selectedChatModel!}
                               onChange={(e) =>
                                 setSelectedChatModel(e.target.value)
@@ -319,11 +319,11 @@ const SettingsDialog = ({
                           </div>
                           <div className="flex flex-col space-y-1">
                             <p className="text-black/70 dark:text-white/70 text-sm">
-                              Custom OpenAI API Key
+                              OpenAI API-Key
                             </p>
                             <Input
                               type="text"
-                              placeholder="Custom OpenAI API Key"
+                              placeholder="Ihr OpenAI API-Key"
                               defaultValue={customOpenAIApiKey!}
                               onChange={(e) =>
                                 setCustomOpenAIApiKey(e.target.value)
@@ -332,11 +332,11 @@ const SettingsDialog = ({
                           </div>
                           <div className="flex flex-col space-y-1">
                             <p className="text-black/70 dark:text-white/70 text-sm">
-                              Custom OpenAI Base URL
+                              OpenAI Base-URL
                             </p>
                             <Input
                               type="text"
-                              placeholder="Custom OpenAI Base URL"
+                              placeholder="Ihre OpenAI Base-URL"
                               defaultValue={customOpenAIBaseURL!}
                               onChange={(e) =>
                                 setCustomOpenAIBaseURL(e.target.value)
@@ -414,11 +414,11 @@ const SettingsDialog = ({
                     )}
                     <div className="flex flex-col space-y-1">
                       <p className="text-black/70 dark:text-white/70 text-sm">
-                        OpenAI API Key
+                        OpenAI API-Key
                       </p>
                       <Input
                         type="text"
-                        placeholder="OpenAI API Key"
+                        placeholder="OpenAI API-Key"
                         defaultValue={config.openaiApiKey}
                         onChange={(e) =>
                           setConfig({
@@ -430,11 +430,11 @@ const SettingsDialog = ({
                     </div>
                     <div className="flex flex-col space-y-1">
                       <p className="text-black/70 dark:text-white/70 text-sm">
-                        Ollama API URL
+                        Ollama API-URL
                       </p>
                       <Input
                         type="text"
-                        placeholder="Ollama API URL"
+                        placeholder="Ollama API-URL"
                         defaultValue={config.ollamaApiUrl}
                         onChange={(e) =>
                           setConfig({
@@ -446,11 +446,11 @@ const SettingsDialog = ({
                     </div>
                     <div className="flex flex-col space-y-1">
                       <p className="text-black/70 dark:text-white/70 text-sm">
-                        GROQ API Key
+                        GROQ API-Key
                       </p>
                       <Input
                         type="text"
-                        placeholder="GROQ API Key"
+                        placeholder="GROQ API-Key"
                         defaultValue={config.groqApiKey}
                         onChange={(e) =>
                           setConfig({
@@ -462,11 +462,11 @@ const SettingsDialog = ({
                     </div>
                     <div className="flex flex-col space-y-1">
                       <p className="text-black/70 dark:text-white/70 text-sm">
-                        Anthropic API Key
+                        Anthropic API-Key
                       </p>
                       <Input
                         type="text"
-                        placeholder="Anthropic API key"
+                        placeholder="Anthropic API-key"
                         defaultValue={config.anthropicApiKey}
                         onChange={(e) =>
                           setConfig({
@@ -485,7 +485,7 @@ const SettingsDialog = ({
                 )}
                 <div className="w-full mt-6 space-y-2">
                   <p className="text-xs text-black/50 dark:text-white/50">
-                    We&apos;ll refresh the page after updating the settings.
+                    Die Seite wird neugeladen, nachdem Einstellungen geändert wurden.
                   </p>
                   <button
                     onClick={handleSubmit}
