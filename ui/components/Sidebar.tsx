@@ -30,13 +30,13 @@ const Sidebar = ({ children }: { children: React.ReactNode }) => {
       icon: Search,
       href: '/discover',
       active: segments.includes('discover'),
-      label: 'Discover',
+      label: 'Entdecken',
     },
     {
       icon: BookOpenText,
       href: '/library',
       active: segments.includes('library'),
-      label: 'Library',
+      label: 'Bibilothek',
     },
   ];
 
