@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   title: 'Chat - Perplexica',
-  description: 'Chat with the internet, chat with Perplexica.',
+  description: 'Chatte mit dem Internet, chatte mit Perplexica.',
 };
 
 const Home = () => {
