@@ -318,6 +318,7 @@ const ChatWindow = ({ id }: { id?: string }) => {
         console.log('[DEBUG] closed');
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const messagesRef = useRef<Message[]>([]);
@@ -503,7 +504,7 @@ const ChatWindow = ({ id }: { id?: string }) => {
       <div>
         {messages.length > 0 ? (
           <>
-            <Navbar messages={messages} />
+            <Navbar chatId={chatId!} messages={messages} />
             <Chat
               loading={loading}
               messages={messages}
